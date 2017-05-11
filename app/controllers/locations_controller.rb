@@ -1,9 +1,12 @@
 class LocationsController < ApplicationController
     def getData
-        render :text => "get data route"
+        coordinates = {
+            "test" => "something",
+            "test2" => "ldjfalksdj"
+        }
+        render :json => coordinates
     end
 
     def sendData
-        render :text => "send data route"
     end
 end
