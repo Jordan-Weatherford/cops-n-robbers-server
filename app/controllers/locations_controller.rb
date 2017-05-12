@@ -26,4 +26,8 @@ class LocationsController < ApplicationController
         @@hiderFlag = ""
         render :json => {"status" => true}
     end
+
+    def getFoxId
+        render :json => {"foxId" => @@hiderFlag}
+    end
 end

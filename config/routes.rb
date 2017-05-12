@@ -3,4 +3,5 @@ Rails.application.routes.draw do
  post 'sendData' => 'locations#sendData'
  post 'hiderFlag' => 'locations#hiderFlag'
  get 'reset' => 'locations#reset'
+ get 'getFoxId' => 'locations#getFoxId'
 end
