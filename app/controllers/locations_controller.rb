@@ -16,12 +16,14 @@ class LocationsController < ApplicationController
         if @@hiderFlag.empty?
             @@hiderFlag = params[:key]
             render :json => {"status" => true}
+        else
+            render :json => {"status" => false}
         end
-        render :json => {"status" => false}
     end
 
     def reset
         @@coordinates.clear
         @@hiderFlag = ""
+        render :json => {"status" => true}
     end
 end
